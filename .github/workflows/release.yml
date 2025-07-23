@@ -23,7 +23,7 @@ jobs:
 
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --noconfirm --onefile --windowed --icon=screenshot_tool.ico screenshot_tool.py
+          pyinstaller --name ScreenShotTool --onefile --windowed --icon=screenshot_tool.ico screenshot_tool.py
 
       - name: Upload EXE to GitHub Release
         uses: softprops/action-gh-release@v2
